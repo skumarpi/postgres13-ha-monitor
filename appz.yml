@@ -1,6 +1,6 @@
 app:
-    name: Postgres HA
-    code: POSTGRESHA
+    name: Postgres HA Monitor
+    code: POSTGRESHAMON
     notify: skumar@ecloudcontrol.com
     
 build:
@@ -25,16 +25,12 @@ volumes:
     mode: ReadWriteOnce   
     
 properties:
-    #POSTGRESQL_DATA: /appz/data/
-    #PGDATA: /appz/data/
     POSTGRESQL_CONNECTUSER: postgres
     POSTGRESQL_CONNECTIONDB: postgres
     POSTGRESQL_PORT: 5432
     POSTGRES_MONITOR_HA: True
     POSTGRESQL_PASSWORD: 
       vault: POSTGRESQL_PASSWORD
-    POSTGRESQL_SPRINGBOOTWEB_PASSWORD:
-          vault: POSTGRESQL_SPRINGBOOTWEB_PASSWORD
     revision : 80
 
     #WebDav Setup
