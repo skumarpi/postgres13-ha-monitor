@@ -23,6 +23,16 @@ volumes:
     name: data
     size: 5Gi
     mode: ReadWriteOnce   
+  - claim: postgres-monitor-home
+    mount: /appz/home
+    name: data
+    size: 5Gi
+    mode: ReadWriteOnce   
+  - claim: postgres-monitor-backup
+    mount: /appz/backup
+    name: data
+    size: 5Gi
+    mode: ReadWriteOnce   
     
 properties:
     POSTGRESQL_CONNECTUSER: postgres
