@@ -25,12 +25,12 @@ volumes:
     mode: ReadWriteOnce   
   - claim: postgres-monitor-home
     mount: /appz/home
-    name: data
+    name: home
     size: 5Gi
     mode: ReadWriteOnce   
   - claim: postgres-monitor-backup
     mount: /appz/backup
-    name: data
+    name: backup
     size: 5Gi
     mode: ReadWriteOnce   
     
