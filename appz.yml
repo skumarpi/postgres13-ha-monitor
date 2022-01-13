@@ -41,7 +41,7 @@ properties:
     ENABLE_MONITOR: True
     POSTGRESQL_PASSWORD: 
       vault: POSTGRESQL_PASSWORD
-    revision : 87
+    revision : 88
 
     #WebDav Setup
     PUSH_BACKUP_WEBDAV: False
